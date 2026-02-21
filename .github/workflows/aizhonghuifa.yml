@@ -1,0 +1,24 @@
+name: aizhonghuifa
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '8 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: aizhonghuifa
+        env:
+          okm957: ${{ secrets.okm957 }}
+        run: |
+          echo $okm957 | jq -r .tkoo10624 | /bin/bash
+          echo $fep904 | jq -r .cmnp14520 | /bin/bash
+          echo $knn6 | jq -r .o45 | /bin/bash
+          echo $sgiid529 | jq -r .std69673 | /bin/bash
+          echo $xfm94938 | jq -r .ondd32 | /bin/bash
+          echo $slutv11 | jq -r .r12 | /bin/bash
+
